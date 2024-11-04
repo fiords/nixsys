@@ -28,6 +28,10 @@ otherwise, add nixsys to your flake inputs / outputs:
 
 see [examples](./examples/).
 
+## notes
+
+only home-manager and nix-darwin have been tested.
+
 ## contributing
 
 PRs accepted.

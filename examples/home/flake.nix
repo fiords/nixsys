@@ -2,9 +2,13 @@
   description = "example home-manager system 🦕";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs = {
+      url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    };
 
-    nixsys.url = "github:fiords/nixsys";
+    nixsys = {
+      url = "github:fiords/nixsys";
+    };
 
     home-manager = {
       url = "github:nix-community/home-manager";

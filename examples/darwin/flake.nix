@@ -2,12 +2,16 @@
   description = "example nix-darwin system 🦕";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs = {
+      url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    };
 
-    nixsys.url = "github:fiords/nixsys";
+    nixsys = {
+      url = "github:fiords/nixsys";
+    };
 
-    home-manager = {
-      url = "github:nix-community/home-manager";
+    nix-darwin = {
+      url = "github:lnl7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
