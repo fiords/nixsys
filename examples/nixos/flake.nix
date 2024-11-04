@@ -16,7 +16,7 @@
   outputs =
     inputs@{ nixsys, ... }:
     let
-      inherit (nixsys { inherit inputs; }) systems users;
+      inherit (nixsys.lib { inherit inputs; }) systems users;
     in
     {
       nixosConfigurations."server" = systems.nixos {
