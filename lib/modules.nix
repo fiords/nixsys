@@ -29,7 +29,6 @@
   nix =
     { lib, pkgs, ... }:
     {
-      nix.optimise.automatic = true;
       nix.settings =
         {
           experimental-features = [
